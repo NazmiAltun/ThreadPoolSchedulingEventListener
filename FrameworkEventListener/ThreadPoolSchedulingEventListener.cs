@@ -7,7 +7,7 @@ namespace FrameworkEventListener
     {
         private const long ThreadPoolKeyword = 0x0002;
         private const int EnqueueId = 30;
-        private const int DequeueId = 30;
+        private const int DequeueId = 31;
         private static readonly Guid EventSourceGuid = Guid.Parse("8E9F5090-2D75-4d03-8A81-E5AFBF85DAF1");
 
         private readonly Action<string> _writer;

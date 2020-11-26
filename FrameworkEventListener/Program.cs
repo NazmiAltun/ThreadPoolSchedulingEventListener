@@ -10,8 +10,6 @@ namespace FrameworkEventListener
 
         static async Task Main(string[] args)
         {
-            Console.WriteLine($"SynchronizationContext.Current={SynchronizationContext.Current}");
-            Console.WriteLine($"TaskScheduler.Current={TaskScheduler.Current}");
             using var threadPoolSchedulingEventListener = new ThreadPoolSchedulingEventListener(Console.WriteLine);
 
             for (var i = 0; i < TaskCount; i++)
